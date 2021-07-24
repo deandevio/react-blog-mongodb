@@ -7,5 +7,5 @@ export const getBlogs = async (req, res) => {
 
 export const postBlogs = async (req, res) => {
   const blog = await Blog.create(req.body);
-  res.json({ blog });
+  res.status(201).json({ success: true, blog });
 };

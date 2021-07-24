@@ -1,13 +1,112 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: rgb(236, 5, 121);
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgb(236, 5, 121);
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  padding: 6px;
+}
+
+.navbar h1 {
+  color: rgb(236, 5, 121);
+}
+
+.navbar a:hover {
+  color: rgb(245, 228, 0);
+}
+
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.create label {
+  text-align: left;
+  display: block;
+}
+
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+
+.create input,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  background: #fff;
+}
+
+.create textarea {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  height: 20vh;
+  background: #fff;
+}
+
+.create button {
+  background: #fff;
+  color: rgb(236, 5, 121);
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid rgb(236, 5, 121);
+  cursor: pointer;
+}
+
+.blog-title h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-preview {
+  display: flex;
+  flex-basis: 33%;
+  padding: 20px;
+}
+
+.blog-preview p {
+  overflow: hidden;
+  max-width: 50ch;
+}
+
+.blog-preview h4 {
+  margin-bottom: 7px;
 }

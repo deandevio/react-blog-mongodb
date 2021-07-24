@@ -1,3 +1,4 @@
+import cors from "cors";
 import express from "express";
 import { getBlogs, postBlogs } from "../controller/controller.js";
 

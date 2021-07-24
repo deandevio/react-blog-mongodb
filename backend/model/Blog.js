@@ -9,12 +9,12 @@ const blogSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  description: {
+  body: {
     type: String,
     required: true,
   },
 });
 
-const Blog = mongoose.model("book", blogSchema);
+const Blog = mongoose.model("blog", blogSchema);
 
 export default Blog;
